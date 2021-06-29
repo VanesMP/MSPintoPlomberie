@@ -1,157 +1,204 @@
-/********* Font-Fmily *****************/
-
-@font-face {
-    font-family: "AbrilFatface";
-    src: url("police/AbrilFatface-Regular.ttf");
-}
-
-@font-face {
-    font-family: "openSans";
-    src: url("police/openSans/OpenSans-Regular.ttf");
-}
-
-
-/*********** style : Body ************/
-
-$fond: #aabeba;
-$secondaire: #777676;
-$btn: #34666dbe;
-* {
-    list-style-type: none;
-}
-
-body {
-    font-family: "openSans";
-    background-color: white;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-h3 {
-    font: 100 1.3em "AbrilFatface";
-}
-
-a {
-    cursor: pointer;
-    text-decoration: none;
-    color: currentColor;
-}
-
-
-/************** HEADER *************/
-
-
-/************** SECTION : PRESENTATION **************/
-
-
-/************* Carte : iframe *****************/
-
-.sectionCarte {
-    margin-top: 5%;
-}
-
-.carte {
-    width: 90%;
-    height: 580px;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 7%;
-    background: white;
-}
-
-.localisation {
-    border: 0;
-    height: 580px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15px;
-}
-
-.separation {
-    border: 1px solid $btn;
-    width: 60%;
-    margin: auto;
-}
-
-
-/************* FOOTER *************************/
-
-footer {
-    height: 450px;
-    background-color: $fond;
-    color: white;
-    margin-top: 5%;
-}
-
-.logo {
-    width: 100%;
-    height: 109px;
-}
-
-.imageLogo {
-    float: right;
-    width: 45%;
-    height: 100px;
-    margin-top: 3%;
-}
-
-.textFooter {
-    width: 52%;
-    height: 300px;
-    margin-left: 4%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.coordonnee,
-.adresse,
-.horaires {
-    width: 32%;
-    height: 299px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.textAdresse {
-    margin-top: auto;
-    padding: 0;
-    height: 148px;
-}
-
-.textHoraires {
-    margin: 0;
-    padding: 0;
-}
-
-.btnFooterCoordonnee,
-.btnFooterAdresse {
-    text-align: center;
-    background: linear-gradient($btn, $fond, $btn);
-    border-radius: 12px;
-    box-shadow: 6px 7px 15px $secondaire;
-    &:hover {
-        background: $btn;
-        box-shadow: 6px 7px 10px $secondaire;
+    /********* Font-Fmily *****************/
+    
+    @font-face {
+        font-family: "AbrilFatface";
+        src: url("police/AbrilFatface-Regular.ttf");
     }
-}
-
-.btnFooterCoordonnee {
-    width: 195px;
-    height: 45px;
-}
-
-.btnFooterAdresse {
-    width: 195px;
-    height: 45px;
-}
-
-.lienAdresse,
-.telephone {
-    display: inline-block;
-    text-transform: uppercase;
-    margin-top: 6%;
-}
+    
+    @font-face {
+        font-family: "openSans";
+        src: url("police/openSans/OpenSans-Regular.ttf");
+    }
+    /*********** style : Body ************/
+    
+    $fondClair: #c9e1dd;
+    $fondSombre: #aabeba;
+    $secondaire: #777676;
+    $btn: #34666dbe;
+    * {
+        list-style-type: none;
+    }
+    
+    body {
+        font-family: "openSans";
+        background-color: white;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h3 {
+        font: 100 1.3em "AbrilFatface";
+    }
+    
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: currentColor;
+    }
+    /************** HEADER *************/
+    /************** SECTION : PRESENTATION **************/
+    
+    .section {
+        width: 100%;
+        height: 1390px;
+    }
+    
+    .imageHaut {
+        background-image: url("../image/imageHaut.jpg");
+        width: 100%;
+        height: 455px;
+        margin-bottom: 5%;
+    }
+    
+    .description {
+        width: 90%;
+        height: 400px;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        background: $fondClair;
+        color: white;
+        border-radius: 35px;
+    }
+    
+    .textDescription {
+        width: 80%;
+        margin: auto;
+        padding-top: 2%;
+    }
+    
+    .galerie {
+        width: 90%;
+        height: 303px;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .photo {
+        width: 30%;
+    }
+    
+    .contact {
+        width: 15%;
+        height: 45px;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    .textContact {
+        color: #34413f;
+        font: 100 1.7em "openSans";
+    }
+    /************* Carte : iframe *****************/
+    
+    .sectionCarte {
+        margin-top: 5%;
+    }
+    
+    .carte {
+        width: 90%;
+        height: 580px;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 7%;
+        background: white;
+    }
+    
+    .localisation {
+        border: 0;
+        height: 580px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+    }
+    
+    .separation {
+        border: 1px solid $btn;
+        width: 60%;
+        margin: auto;
+    }
+    /************* FOOTER *************************/
+    
+    footer {
+        height: 450px;
+        background-color: $fondSombre;
+        color: white;
+        margin-top: 5%;
+    }
+    
+    .logo {
+        width: 100%;
+        height: 109px;
+    }
+    
+    .imageLogo {
+        float: right;
+        width: 45%;
+        height: 100px;
+        margin-top: 3%;
+    }
+    
+    .textFooter {
+        width: 52%;
+        height: 300px;
+        margin-left: 4%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .coordonnee,
+    .adresse,
+    .horaires {
+        width: 32%;
+        height: 299px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .textAdresse {
+        margin-top: auto;
+        padding: 0;
+        height: 148px;
+    }
+    
+    .textHoraires {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .btn {
+        text-align: center;
+        background: linear-gradient($btn, $fondClair, $btn);
+        border-radius: 12px;
+        box-shadow: 6px 7px 15px $secondaire;
+        &:hover {
+            background: $btn;
+            box-shadow: 6px 7px 10px $secondaire;
+        }
+    }
+    
+    .btnFooterCoordonnee {
+        width: 195px;
+        height: 45px;
+    }
+    
+    .btnFooterAdresse {
+        width: 195px;
+        height: 45px;
+    }
+    
+    .lienAdresse,
+    .telephone {
+        display: inline-block;
+        text-transform: uppercase;
+        margin-top: 6%;
+    }
