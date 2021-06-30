@@ -28,7 +28,7 @@
     }
     
     h3 {
-        font: 100 1.3em "AbrilFatface";
+        font: 900 1.3em "AbrilFatface";
     }
     
     a {
@@ -127,7 +127,7 @@
     /************* FOOTER *************************/
     
     footer {
-        height: 450px;
+        height: 338px;
         background-color: $fondSombre;
         color: white;
         margin-top: 5%;
@@ -146,28 +146,32 @@
     }
     
     .textFooter {
-        width: 52%;
-        height: 300px;
-        margin-left: 4%;
+        width: 95%;
+        height: 250px;
+        margin: auto;
+        padding-top: 2%;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-around;
+        align-items: baseline;
     }
     
     .coordonnee,
     .adresse,
     .horaires {
         width: 32%;
-        height: 299px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        font: 200 1.2em 'openSans';
     }
     
     .textAdresse {
-        margin-top: auto;
         padding: 0;
-        height: 148px;
+        height: 149px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .textHoraires {
@@ -177,12 +181,13 @@
     
     .btn {
         text-align: center;
-        background: linear-gradient($btn, $fondClair, $btn);
         border-radius: 12px;
         box-shadow: 6px 7px 15px $secondaire;
+        background: linear-gradient( 171deg, #ffffff, #c5c5c5);
+        color: black;
         &:hover {
-            background: $btn;
-            box-shadow: 6px 7px 10px $secondaire;
+            background: linear-gradient( 171deg, #ffffff, #d5e3e3);
+            box-shadow: 6px 7px 10px #34666d66;
         }
     }
     
