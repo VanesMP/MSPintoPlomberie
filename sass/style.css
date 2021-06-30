@@ -28,6 +28,7 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: currentColor;
+  opacity: 90%;
 }
 
 /************** HEADER *************/
@@ -50,7 +51,7 @@ a {
   margin: auto;
   margin-top: 2%;
   margin-bottom: 2%;
-  background: #c9e1dd;
+  background: #515151;
   color: white;
   border-radius: 35px;
 }
@@ -78,14 +79,17 @@ a {
 
 .contact {
   width: 15%;
-  height: 45px;
   margin: auto;
   margin-top: 2%;
   margin-bottom: 2%;
 }
 
 .textContact {
-  color: #34413f;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  opacity: 0.9;
   font: 100 1.7em "openSans";
 }
 
@@ -120,8 +124,12 @@ a {
 
 /************* FOOTER *************************/
 footer {
+<<<<<<< HEAD
   height: 338px;
   background-color: #aabeba;
+=======
+  background-color: #373737;
+>>>>>>> a88633c2073191e869e8fdd2c82232bd7311d01c
   color: white;
   margin-top: 5%;
 }
@@ -132,13 +140,12 @@ footer {
 }
 
 .imageLogo {
-  float: right;
-  width: 45%;
+  width: 50%;
   height: 100px;
-  margin-top: 3%;
 }
 
 .textFooter {
+<<<<<<< HEAD
   width: 95%;
   height: 250px;
   margin: auto;
@@ -147,6 +154,14 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-items: baseline;
+=======
+  width: 100%;
+  height: 300px;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+>>>>>>> a88633c2073191e869e8fdd2c82232bd7311d01c
 }
 
 .coordonnee,
@@ -174,6 +189,7 @@ footer {
 
 .btn {
   text-align: center;
+<<<<<<< HEAD
   border-radius: 12px;
   box-shadow: 6px 7px 15px #777676;
   background: linear-gradient(171deg, #ffffff, #c5c5c5);
@@ -182,6 +198,15 @@ footer {
 .btn:hover {
   background: linear-gradient(171deg, #ffffff, #d5e3e3);
   box-shadow: 6px 7px 10px #34666d66;
+=======
+  background: #005F6B;
+  border-radius: 12px;
+  box-shadow: 6px 7px 15px #005F6B;
+}
+.btn:hover {
+  background: #005F6B;
+  box-shadow: 6px 7px 10px #FFF1AA;
+>>>>>>> a88633c2073191e869e8fdd2c82232bd7311d01c
 }
 
 .btnFooterCoordonnee {
