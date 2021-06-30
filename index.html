@@ -11,9 +11,18 @@
 
 <body>
     <header>
+        <!-- Barre de Nav. -->
+        <div class="navBarre">
+            <a class="ancre" href="#description">Présentation</a>
+            <a class="ancre" href="#galerie">Prestations</a>
+            <a class="ancre" href="#localisation">Localisation</a>
+            <a class="ancre" href="#coordonnee">Contact</a>
+        </div>
+        <!-- Logo -->
         <div class="logo">
             <img class="imageLogo" src="image/logo.png" alt=" Le logo de l' entreprise">
         </div>
+
     </header>
     <!-- Descriptif -->
     <section class="section">
@@ -22,12 +31,18 @@
         </div>
 
         <div class="separation"></div>
-        <div class="contact btn">
-            <btn class="textContact" href="#textFooter">Contact</btn>
+        <div class="boxDevis">
+            <div class="titreDevis">
+                <p>Un projet en tête ?</p>
+                <p>N'hésitez pas à me contacter pour le voir se concrétiser.</p>
+            </div>
+            <div class="devis btn">
+                <btn class="textDevis" href="#textFooter">Devis</btn>
+            </div>
         </div>
         <div class="separation"></div>
 
-        <div class="description">
+        <div id="description">
             <div class="textDescription">
                 <p>Mario (マリオ, Mario?) est un personnage de jeu vidéo devenu la mascotte de Nintendo, facilement reconnaissable à sa moustache, à sa salopette, à ses gants blancs et à sa casquette rouge marquée d'un M inscrit dans un cercle blanc. Né de
                     l'imagination du concepteur de jeux Shigeru Miyamoto, il est italo-américain. Dans les années 1980, Mario Segale a loué un dépôt à Nintendo of America, qui a décidé de donner son prénom « Mario » à la star de son nouveau jeu vidéo
@@ -35,18 +50,22 @@
                     emblématiques du jeu vidéo. Depuis, Mario a accompagné toutes les consoles de Nintendo. Les jeux de la série Super Mario ont joué un rôle important dans l'évolution du jeu de plates-formes, dont ils renouvellent régulièrement les codes.
                     Plusieurs épisodes ont marqué durablement le jeu vidéo, notamment le premier opus, Super Mario Bros. (NES, 1985), qui est resté pendant vingt-trois ans le jeu le plus vendu, avec plus de 40 millions de cartouches écoulées (détrôné
                     par Wii Sports en 2008), ou sa première apparition en 3D, dans le jeu Super Mario 64 (Nintendo 64, 1996). Au fil des années, le personnage de Mario est apparu dans d'autres types de jeux, tels que le jeu de course (Mario Kart), le
-                    jeu de combat (Super Smash Bros.), ou encore le jeu de rôle (Super Mario RPG). La série Mario est la plus vendue de l'histoire du jeu vidéo, avec plus de 195 millions d'exemplaires1 écoulés. Cependant, d'après les estimations du site
-                    VG Chartz, l'ensemble des jeux liés à Mario représentent au moins 450 millions d'exemplaires vendus2, et, certains chiffres n'étant pas connus, ce total est encore inférieur à la réalité. L'univers de Mario s'est progressivement enrichi
-                    au fil des jeux, avec l'apparition de nouveaux personnages, devenus plus ou moins célèbres à leur tour, au point de voler à l'occasion le premier rôle à Mario. Les principaux sont Luigi, son frère ; la princesse Peach, sa dulcinée
-                    ; les Toads, serviteurs de Peach ; Yoshi, sa fidèle monture ; Bowser, son ennemi juré, Wario, son grand rival et Waluigi, le compère de Wario. Sa voix est doublée par Charles Martinet.</p>
+                    jeu de combat (Super Smash Bros.), ou encore le jeu de rôle (Super Mario RPG). La série Mario est la plus vendue de l'histoire du jeu vidéo, avec plus de 195 millions d'exemplaires1 écoulés...</p>
+                <p>To be continued ...</p>
             </div>
         </div>
         <div class="separation"></div>
 
-        <div class="galerie">
-            <div class="photo"></div>
-            <div class="photo"></div>
-            <div class="photo"></div>
+        <div id="galerie">
+            <div class="photo">
+                <div class="installation"></div>
+            </div>
+            <div class="photo">
+                <div class="depannge"></div>
+            </div>
+            <div class="photo">
+                <div class="climatisation"></div>
+            </div>
         </div>
 
     </section>
@@ -54,7 +73,7 @@
     <div class="sectionCarte">
         <div class="separation"></div>
         <div class="carte">
-            <iframe class="localisation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.167692899864!2d1.7133190964294573!3d43.76937773152591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ae82865a976fb1%3A0xaf059abf3db45175!2sRoute%20de%20Saint-Lieux%2C%20Saint-Sulpice-la-Pointe!5e0!3m2!1sfr!2sfr!4v1624961930335!5m2!1sfr!2sfr"
+            <iframe id="localisation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.167692899864!2d1.7133190964294573!3d43.76937773152591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ae82865a976fb1%3A0xaf059abf3db45175!2sRoute%20de%20Saint-Lieux%2C%20Saint-Sulpice-la-Pointe!5e0!3m2!1sfr!2sfr!4v1624961930335!5m2!1sfr!2sfr"
                 width="800" height="600" style="border:0;" allowfullscreen="" loading="eager"></iframe>
         </div>
         <div class="separation"></div>
@@ -66,7 +85,7 @@
 
         <div class="textFooter">
 
-            <div class="coordonnee">
+            <div id="coordonnee">
                 <h3 class="titrefooter">Coordonnées</h3>
                 <div class="btnFooterCoordonnee btn">
                     <a class="telephone" href="tel:+33-6-09-65-76-24" type=>appeler maintenant</a>
@@ -75,7 +94,7 @@
             </div>
 
 
-            <div class="adresse">
+            <div id="adresse">
                 <h3 class="titreFooter">Adresse</h3>
                 <div class="btnFooterAdresse btn">
                     <a class="lienAdresse" href="https://www.google.com/maps/dir//Route+de+Saint-Lieux,+Saint-Sulpice-la-Pointe/@43.768808,1.7046394,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12ae82865a976fb1:0xaf059abf3db45175!2m2!1d1.7133942!2d43.7688083">itinéraire</a>
@@ -88,7 +107,7 @@
                 </ul>
             </div>
 
-            <div class="horaires">
+            <div id="horaires">
                 <h3 class="titreFooter">Horaires d'ouverture</h3>
                 <ul class="textHoraires">
                     <li>lun.: 08:00 - 19:00</li>
