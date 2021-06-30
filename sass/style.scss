@@ -33,6 +33,7 @@
     
     h3 {
         font: 900 1.3em "AbrilFatface";
+
     }
     
     a {
@@ -187,7 +188,7 @@
         margin-top: 5%;
     }
     
-    .textFooter {
+    .boxFooter {
         width: 95%;
         height: 250px;
         margin: auto;
@@ -243,9 +244,41 @@
         height: 45px;
     }
     
-    .lienAdresse,
-    .telephone {
+    .lienAdresse {
         display: inline-block;
         text-transform: uppercase;
         margin-top: 6%;
+    }
+    .telephone {
+        display: inline-block;
+        text-transform: uppercase;
+
+    }
+    .foot {
+    align-items: center;
+    }
+
+    @media all and (max-width: 800px) {
+    .boxFooter{
+    align-items: center;
+    flex-direction: column;
+    height:100%;
+    }
+    .foot {
+    width: 100% !important;
+    margin-bottom:15px;
+    }
+    footer {
+    height: 100%;
+    }
+    .textAdresse{
+    height: 100%;
+    }
+
+
+    h3 {
+    margin: 15px;
+    padding:0px;
+    }
+
     }
