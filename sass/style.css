@@ -125,7 +125,7 @@ a {
 /************* FOOTER *************************/
 footer {
   height: 338px;
-  background-color: #373737;
+  background-color: #aabeba;
   color: white;
   margin-top: 5%;
 }
@@ -179,7 +179,7 @@ footer {
   border-radius: 12px;
   box-shadow: 6px 7px 15px #777676;
   background: linear-gradient(171deg, #ffffff, #c5c5c5);
-  color: black;
+  color: #003c5f;
 }
 .btn:hover {
   background: linear-gradient(171deg, #ffffff, #d5e3e3);

@@ -136,7 +136,7 @@
     
     footer {
         height: 338px;
-        background-color: $fondSombre;
+        background-color: #aabeba;
         color: white;
         margin-top: 5%;
     }
@@ -190,7 +190,7 @@
         border-radius: 12px;
         box-shadow: 6px 7px 15px $secondaire;
         background: linear-gradient( 171deg, #ffffff, #c5c5c5);
-        color: black;
+        color: #003c5f;
         &:hover {
             background: linear-gradient( 171deg, #ffffff, #d5e3e3);
             box-shadow: 6px 7px 10px #34666d66;
