@@ -33,7 +33,6 @@
     
     h3 {
         font: 900 1.3em "AbrilFatface";
-
     }
     
     a {
@@ -118,6 +117,32 @@
     .photo {
         width: 30%;
     }
+    
+    @media all and (max-width: 800px) {
+        .imageHaut {
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 167px;
+        }
+        .boxDevis {
+            height: 222px;
+            background: linear-gradient( 171deg, #ffffff, #c5c5c5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .titreDevis {
+            line-height: 0;
+        }
+        .textDevis {
+            font-size: 1.2em;
+        }
+        #description {
+            height: 900px;
+        }
+    }
     /***************** Bouton devis *********/
     
     .boxDevis {
@@ -182,7 +207,7 @@
     /************* FOOTER *************************/
     
     footer {
-        height: 338px;
+        height: 346px;
         background-color: #aabeba;
         color: white;
         margin-top: 5%;
@@ -249,36 +274,34 @@
         text-transform: uppercase;
         margin-top: 6%;
     }
+    
     .telephone {
         display: inline-block;
         text-transform: uppercase;
-
     }
+    
     .foot {
-    align-items: center;
+        align-items: center;
     }
-
+    
     @media all and (max-width: 800px) {
-    .boxFooter{
-    align-items: center;
-    flex-direction: column;
-    height:100%;
-    }
-    .foot {
-    width: 100% !important;
-    margin-bottom:15px;
-    }
-    footer {
-    height: 100%;
-    }
-    .textAdresse{
-    height: 100%;
-    }
-
-
-    h3 {
-    margin: 15px;
-    padding:0px;
-    }
-
+        .boxFooter {
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+        }
+        .foot {
+            width: 100% !important;
+            margin-bottom: 15px;
+        }
+        footer {
+            height: 100%;
+        }
+        .textAdresse {
+            height: 100%;
+        }
+        h3 {
+            margin: 15px;
+            padding: 0px;
+        }
     }
