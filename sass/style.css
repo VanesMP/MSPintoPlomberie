@@ -74,7 +74,7 @@ a {
   margin-bottom: 5%;
 }
 
-#description, .boxDevis {
+#description {
   width: 90%;
   height: 550px;
   margin: auto;
@@ -132,12 +132,19 @@ a {
     font-size: 1.2em;
   }
 
-  #description, .boxDevis {
+  #description {
     height: 900px;
   }
 }
 /***************** Bouton devis *********/
 .boxDevis {
+  width: 90%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: #003c5f;
+  font: 200 1.3em "openSans";
+  border-radius: 35px;
   height: 200px;
   background: linear-gradient(2deg, #ffffff, #c5c5c5);
   display: flex;
