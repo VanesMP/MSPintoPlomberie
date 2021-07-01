@@ -44,6 +44,24 @@ a {
   float: right;
 }
 
+@media all and (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .imageLogo {
+    width: 70%;
+    height: 65px;
+    margin-top: 4%;
+    float: right;
+  }
+
+  .logo {
+    width: 100%;
+    height: 87px;
+  }
+}
 /************ Barre de Navigation ***************/
 .navBarre {
   float: left;
@@ -61,6 +79,12 @@ a {
   border-bottom: darkblue;
 }
 
+@media all and (max-width: 800px) {
+  .navBarre {
+    width: 27%;
+    height: 29px;
+  }
+}
 /************** SECTION : PRESENTATION **************/
 .section {
   width: 100%;
@@ -92,48 +116,22 @@ a {
   padding-top: 2%;
 }
 
-#galerie {
-  width: 90%;
-  height: 303px;
-  margin: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.photo {
-  width: 30%;
-}
-
 @media all and (max-width: 800px) {
+  .section {
+    height: 1917px;
+  }
+
   .imageHaut {
     width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
     height: 167px;
-  }
-
-  .boxDevis {
-    height: 222px;
-    background: linear-gradient(171deg, #ffffff, #c5c5c5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .titreDevis {
-    line-height: 0;
-  }
-
-  .textDevis {
-    font-size: 1.2em;
+    margin-bottom: 3%;
   }
 
   #description {
-    height: 900px;
+    height: 915px;
+    font-size: 1em;
   }
 }
 /***************** Bouton devis *********/
@@ -169,11 +167,91 @@ a {
   line-height: 10px;
 }
 
+@media all and (max-width: 800px) {
+  .boxDevis {
+    height: 222px;
+    background: linear-gradient(2deg, #ffffff, #c5c5c5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .titreDevis {
+    line-height: 29px;
+  }
+
+  .textDevis {
+    font-size: 1.2em;
+  }
+}
 /************ Galerie ***************/
-.installation {
-  background-image: url("image/installation.jpg.crdownload");
+#galerie {
+  width: 90%;
+  height: 303px;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
+.photo {
+  width: 30%;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo1 {
+  background-image: url("../image/depannage.png");
+}
+
+.photo2 {
+  background-image: url("../image/climatisation.jpg");
+}
+
+.photo3 {
+  background-image: url("../image/installation.jpg.crdownload");
+}
+
+@media all and (max-width: 800px) {
+  #galerie {
+    height: 583px;
+    flex-direction: column;
+  }
+
+  .photo {
+    width: 100%;
+    height: 30%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+
+  .boxTitrePhoto {
+    width: 32%;
+    height: 48px;
+    float: right;
+    background-color: #f23535;
+    color: #f6f6f6;
+    margin-top: 2%;
+    margin-right: 2%;
+    font: 200 1em "openSans";
+    border-radius: 8px;
+  }
+
+  .titrePhoto {
+    margin: auto;
+    text-align: center;
+    padding-top: 11%;
+    font: 100 1em "AbrilFatface";
+  }
+
+  .installationPhoto {
+    padding-top: 6%;
+  }
+}
 /************* Carte : iframe *****************/
 .sectionCarte {
   margin-top: 5%;
@@ -276,6 +354,7 @@ footer {
 .telephone {
   display: inline-block;
   text-transform: uppercase;
+  padding-top: 6%;
 }
 
 .foot {
