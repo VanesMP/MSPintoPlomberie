@@ -1,390 +1,415 @@
-    /********* Font-Fmily *****************/
-    
-    @font-face {
-        font-family: "AbrilFatface";
-        src: url("police/AbrilFatface-Regular.ttf");
-    }
-    
-    @font-face {
-        font-family: "openSans";
-        src: url("police/openSans/OpenSans-Regular.ttf");
-    }
-    /*********** style : Body ************/
-    
-    $fondClair: #515151;
-    $fondSombre: #373737;
-    $bleuTresClair: #3D83FE;
-    $bleuClair: #0B62FD;
-    $bleu: #005F6B;
-    $yellowLight: #FFF1AA;
-    $secondaire: #777676;
-    $btn: #34666dbe;
-    * {
-        list-style-type: none;
-    }
-    
-    body {
-        font-family: "openSans";
-        background-color: white;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    
-    h3 {
-        font: 900 1.3em "AbrilFatface";
-    }
-    
-    a {
-        cursor: pointer;
-        text-decoration: none;
-        color: currentColor;
-        opacity: 90%;
-    }
-    /************** HEADER *************/
-    
-    .logo {
-        width: 100%;
-        height: 109px;
-    }
-    
-    .imageLogo {
-        width: 50%;
-        height: 100px;
-        margin-top: 3%;
-        float: right;
-    }
-    
-    @media all and (max-width: 800px) {
-        header {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-        .imageLogo {
-            width: 70%;
-            height: 65px;
-            margin-top: 4%;
-            float: right;
-        }
-        .logo {
-            width: 100%;
-            height: 87px;
-        }
-    }
-    /************ Barre de Navigation ***************/
-    
-    .navBarre {
-        float: left;
-        width: 50%;
-        height: 90px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: flex-end;
-        font: 500 1.2em 'AbrilFatface';
-        color: #003c63;
-    }
-    
-    .ancre:hover {
-        border-bottom: darkblue;
-    }
-    
-    @media all and (max-width: 800px) {
-        .navBarre {
-            width: 27%;
-            height: 29px;
-        }
-    }
-    /************** SECTION : PRESENTATION **************/
-    
-    .section {
-        width: 100%;
-        height: 1675px;
-    }
-    
-    .imageHaut {
-        background-image: url("../image/imageHaut.jpg");
-        width: 100%;
-        height: 455px;
-        margin-bottom: 5%;
-    }
-    
-    #description {
-        width: 90%;
-        height: 550px;
-        margin: auto;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        background: linear-gradient( 171deg, #ffffff, #c5c5c5);
-        color: #003c5f;
-        font: 200 1.3em 'openSans';
-        border-radius: 35px;
-    }
-    
-    .textDescription {
-        width: 80%;
-        margin: auto;
-        padding-top: 2%;
-    }
-    
-    @media all and (max-width: 800px) {
-        .section {
-            height: 1935px;
-        }
-        .imageHaut {
-            width: 100%;
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 167px;
-            margin-bottom: 3%;
-        }
-        #description {
-            height: 915px;
-            font-size: 1em;
-        }
-    }
-    /***************** Bouton devis *********/
-    
-    .boxDevis {
-        width: 90%;
-        margin: auto;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        color: #003c5f;
-        font: 200 1.3em 'openSans';
-        border-radius: 35px;
-        height: 200px;
-        background: linear-gradient( 2deg, #ffffff, #c5c5c5);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .devis {
-        width: 256px;
-        height: 45px;
-        margin-top: 1%;
-    }
-    
-    .textDevis {
-        color: #003c63;
-        font: 500 1.7em "openSans";
-    }
-    
-    .titreDevis {
-        text-align: center;
-        line-height: 10px;
-    }
-    
-    @media all and (max-width: 800px) {
-        .boxDevis {
-            height: 222px;
-            background: linear-gradient( 2deg, #ffffff, #c5c5c5);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-        }
-        .titreDevis {
-            line-height: 29px;
-        }
-        .textDevis {
-            font-size: 1.2em;
-        }
-    }
-    /************ Galerie ***************/
-    
-    #galerie {
-        width: 90%;
-        height: 303px;
-        margin: auto;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    .photo {
-        width: 30%;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .photo1 {
-        background-image: url('../image/depannage.png');
-    }
-    
-    .photo2 {
-        background-image: url('../image/climatisation.jpg');
-    }
-    
-    .photo3 {
-        background-image: url('../image/installation.jpg.crdownload');
-    }
-    
-    @media all and (max-width: 800px) {
-        #galerie {
-            height: 583px;
-            flex-direction: column;
-        }
-        .photo {
-            width: 100%;
-            height: 30%;
-            background-size: cover;
-            background-position: center;
-            border-radius: 5px;
-        }
-        .boxTitrePhoto {
-            width: 32%;
-            height: 48px;
-            float: right;
-            background-color: #f23535;
-            color: #f6f6f6;
-            margin-top: 2%;
-            margin-right: 2%;
-            font: 200 1em 'openSans';
-            border-radius: 8px;
-        }
-        .titrePhoto {
-            margin: auto;
-            text-align: center;
-            padding-top: 11%;
-            font: 100 1em 'AbrilFatface';
-        }
-        .installationPhoto {
-            padding-top: 6%;
-        }
-    }
-    /************* Carte : iframe *****************/
-    
-    .sectionCarte {
-        margin-top: 5%;
-    }
-    
-    .carte {
-        width: 90%;
-        height: 580px;
-        margin: auto;
-        margin-top: 5%;
-        margin-bottom: 7%;
-        background: white;
-    }
-    
-    #localisation {
-        border: 0;
-        height: 580px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 15px;
-    }
-    
-    .separation {
-        border: 1px solid $btn;
-        width: 60%;
-        margin: auto;
-    }
-    /************* FOOTER *************************/
-    
-    footer {
-        height: 346px;
-        background-color: #aabeba;
-        color: white;
-        margin-top: 5%;
-    }
-    
-    .boxFooter {
-        width: 95%;
-        height: 250px;
-        margin: auto;
-        padding-top: 2%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: baseline;
-    }
-    
-    #coordonnee,
-    #adresse,
-    #horaires {
-        width: 32%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font: 200 1.2em 'openSans';
-    }
-    
-    .textAdresse {
-        padding: 0;
-        height: 149px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .textHoraires {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .btn {
-        text-align: center;
-        border-radius: 12px;
-        box-shadow: 6px 7px 15px $secondaire;
-        background: linear-gradient( 171deg, #ffffff, #c5c5c5);
-        color: #003c5f;
-        &:hover {
-            background: linear-gradient( 171deg, #ffffff, #d5e3e3);
-            box-shadow: 6px 7px 10px #34666d66;
-        }
-    }
-    
-    .btnFooterCoordonnee {
-        width: 195px;
-        height: 45px;
-    }
-    
-    .btnFooterAdresse {
-        width: 195px;
-        height: 45px;
-    }
-    
-    .lienAdresse {
-        display: inline-block;
-        text-transform: uppercase;
-        margin-top: 6%;
-    }
-    
-    .telephone {
-        display: inline-block;
-        text-transform: uppercase;
-        padding-top: 6%;
-    }
-    
-    .foot {
-        align-items: center;
-    }
-    
-    @media all and (max-width: 800px) {
-        .boxFooter {
-            align-items: center;
-            flex-direction: column;
-            height: 100%;
-        }
-        .foot {
-            width: 100% !important;
-            margin-bottom: 15px;
-        }
-        footer {
-            height: 100%;
-        }
-        .textAdresse {
-            height: 100%;
-        }
-        h3 {
-            margin: 15px;
-            padding: 0px;
-        }
-    }
+            /********* Font-Fmily *****************/
+            
+            @font-face {
+                font-family: "AbrilFatface";
+                src: url("police/AbrilFatface-Regular.ttf");
+            }
+            
+            @font-face {
+                font-family: "openSans";
+                src: url("police/openSans/OpenSans-Regular.ttf");
+            }
+            /*********** style : Body ************/
+            
+            $fondClair: #515151;
+            $fondSombre: #373737;
+            $bleuTresClair: #3D83FE;
+            $bleuClair: #0B62FD;
+            $bleu: #005F6B;
+            $yellowLight: #FFF1AA;
+            $secondaire: #777676;
+            $btn: #34666dbe;
+            * {
+                list-style-type: none;
+            }
+            
+            body {
+                font-family: "openSans";
+                background-color: white;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            h3 {
+                font: 900 1.3em "AbrilFatface";
+            }
+            
+            a {
+                cursor: pointer;
+                text-decoration: none;
+                color: currentColor;
+                opacity: 90%;
+            }
+            /************** HEADER *************/
+            
+            .logo {
+                width: 100%;
+                height: 109px;
+            }
+            
+            .imageLogo {
+                width: 50%;
+                height: 100px;
+                margin-top: 3%;
+                float: right;
+            }
+            
+            @media all and (max-width: 800px) {
+                header {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+                .imageLogo {
+                    width: 70%;
+                    height: 65px;
+                    margin-top: 4%;
+                    float: right;
+                }
+                .logo {
+                    width: 100%;
+                    height: 87px;
+                }
+            }
+            /************ Barre de Navigation ***************/
+            
+            .navBarre {
+                float: left;
+                width: 50%;
+                height: 90px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: flex-end;
+                font: 500 1.2em 'AbrilFatface';
+                color: #003c63;
+            }
+            
+            .ancre:hover {
+                border-bottom: darkblue;
+            }
+            
+            @media all and (max-width: 800px) {
+                .navBarre {
+                    width: 27%;
+                    height: 29px;
+                }
+            }
+            /************** SECTION : PRESENTATION **************/
+            
+            .section {
+                width: 100%;
+                height: 1675px;
+            }
+            
+            .imageHaut {
+                background-image: url("../image/imageHaut.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 455px;
+                margin-bottom: 5%;
+            }
+            
+            #description {
+                width: 90%;
+                height: 550px;
+                margin: auto;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                background: linear-gradient( 171deg, #ffffff, #c5c5c5);
+                color: #003c5f;
+                font: 200 1.3em 'openSans';
+                border-radius: 35px;
+            }
+            
+            .textDescription {
+                width: 80%;
+                margin: auto;
+                padding-top: 2%;
+            }
+            
+            @media all and (max-width: 800px) {
+                .section {
+                    height: 1935px;
+                }
+                .imageHaut {
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 167px;
+                    margin-bottom: 3%;
+                }
+                #description {
+                    height: 915px;
+                    font-size: 1em;
+                }
+            }
+            /***************** Bouton devis *********/
+            
+            .boxDevis {
+                width: 66%;
+                margin: auto;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                color: #003c5f;
+                font: 200 1.3em 'openSans';
+                border-radius: 35px;
+                height: 200px;
+                background: linear-gradient( 2deg, #ffffff, #c5c5c5);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .devis {
+                width: 256px;
+                height: 45px;
+                margin-top: 1%;
+            }
+            
+            .textDevis {
+                color: #ec2a1b;
+                font: 800 1.3em "openSans";
+            }
+            
+            .titreDevis {
+                text-align: center;
+                line-height: 10px;
+            }
+            
+            @media all and (max-width: 800px) {
+                .boxDevis {
+                    height: 222px;
+                    background: linear-gradient( 2deg, #ffffff, #c5c5c5);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                }
+                .titreDevis {
+                    line-height: 29px;
+                }
+                .textDevis {
+                    font-size: 1.2em;
+                }
+            }
+            /************ Galerie ***************/
+            
+            #galerie {
+                width: 90%;
+                height: 303px;
+                margin: auto;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            
+            .photo {
+                width: 30%;
+                background-size: cover;
+                background-position: center;
+            }
+            
+            .photo1 {
+                background-image: url('../image/depannage.png');
+            }
+            
+            .photo2 {
+                background-image: url('../image/climatisation.jpg');
+            }
+            
+            .photo3 {
+                background-image: url('../image/installation.jpg.crdownload');
+            }
+            
+            .boxTitrePhoto {
+                width: 32%;
+                height: 48px;
+                float: right;
+                background-color: #f23535;
+                color: #f6f6f6;
+                margin-top: 2%;
+                margin-right: 2%;
+                font: 200 1em "openSans";
+                border-radius: 8px;
+            }
+            
+            .installationPhoto {
+                padding-top: 6%;
+            }
+            
+            .titrePhoto {
+                margin: auto;
+                text-align: center;
+                padding-top: 9%;
+                font: 100 1em "AbrilFatface";
+            }
+            
+            @media all and (max-width: 800px) {
+                #galerie {
+                    height: 583px;
+                    flex-direction: column;
+                }
+                .photo {
+                    width: 100%;
+                    height: 30%;
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 5px;
+                }
+                .boxTitrePhoto {
+                    width: 32%;
+                    height: 48px;
+                    float: right;
+                    background-color: #f23535;
+                    color: #f6f6f6;
+                    margin-top: 2%;
+                    margin-right: 2%;
+                    font: 200 1em 'openSans';
+                    border-radius: 8px;
+                }
+                .titrePhoto {
+                    margin: auto;
+                    text-align: center;
+                    padding-top: 11%;
+                    font: 100 1em 'AbrilFatface';
+                }
+                .installationPhoto {
+                    padding-top: 6%;
+                }
+            }
+            /************* Carte : iframe *****************/
+            
+            .sectionCarte {
+                margin-top: 5%;
+            }
+            
+            .carte {
+                width: 90%;
+                height: 580px;
+                margin: auto;
+                margin-top: 5%;
+                margin-bottom: 7%;
+                background: white;
+            }
+            
+            #localisation {
+                border: 0;
+                height: 580px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 15px;
+            }
+            
+            .separation {
+                border: 1px solid $btn;
+                width: 60%;
+                margin: auto;
+            }
+            /************* FOOTER *************************/
+            
+            footer {
+                height: 346px;
+                background-color: #aabeba;
+                color: white;
+                margin-top: 5%;
+            }
+            
+            .boxFooter {
+                width: 95%;
+                height: 250px;
+                margin: auto;
+                padding-top: 2%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: baseline;
+            }
+            
+            #coordonnee,
+            #adresse,
+            #horaires {
+                width: 32%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font: 200 1.2em 'openSans';
+            }
+            
+            .textAdresse {
+                padding: 0;
+                height: 149px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .textHoraires {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .btn {
+                text-align: center;
+                border-radius: 12px;
+                box-shadow: 6px 7px 15px $secondaire;
+                background: linear-gradient( 171deg, #ffffff, #c5c5c5);
+                color: #003c5f;
+                &:hover {
+                    background: linear-gradient( 171deg, #ffffff, #d5e3e3);
+                    box-shadow: 6px 7px 10px #34666d66;
+                }
+            }
+            
+            .btnFooterCoordonnee {
+                width: 195px;
+                height: 45px;
+            }
+            
+            .btnFooterAdresse {
+                width: 195px;
+                height: 45px;
+            }
+            
+            .lienAdresse {
+                display: inline-block;
+                text-transform: uppercase;
+                margin-top: 6%;
+            }
+            
+            .telephone {
+                display: inline-block;
+                text-transform: uppercase;
+                padding-top: 6%;
+            }
+            
+            .foot {
+                align-items: center;
+            }
+            
+            @media all and (max-width: 800px) {
+                .boxFooter {
+                    align-items: center;
+                    flex-direction: column;
+                    height: 100%;
+                }
+                .foot {
+                    width: 100% !important;
+                    margin-bottom: 15px;
+                }
+                footer {
+                    height: 100%;
+                }
+                .textAdresse {
+                    height: 100%;
+                }
+                h3 {
+                    margin: 15px;
+                    padding: 0px;
+                }
+            }
