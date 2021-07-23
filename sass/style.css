@@ -203,6 +203,12 @@ a {
   width: 30%;
   background-size: cover;
   background-position: center;
+  border: 8px outset #bbc;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8);
+}
+.photo:hover {
+  border: 8px inset #bbc;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8) inset;
 }
 
 .photo1 {
@@ -220,20 +226,23 @@ a {
 .boxTitrePhoto {
   width: 32%;
   height: 48px;
-  float: right;
   background-color: #f23535;
   color: #f6f6f6;
-  margin-top: 2%;
-  margin-right: 2%;
+  margin-top: -6%;
+  margin-left: auto;
+  margin-right: auto;
   font: 200 1em "openSans";
   border-radius: 8px;
 }
 
 .installationPhoto {
+  margin: auto;
+  text-align: center;
   padding-top: 6%;
+  font: 100 1em "AbrilFatface";
 }
 
-.titrePhoto {
+.depannage {
   margin: auto;
   text-align: center;
   padding-top: 9%;
