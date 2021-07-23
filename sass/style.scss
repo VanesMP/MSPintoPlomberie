@@ -45,6 +45,35 @@ a {
 }
 
 
+/***** Effet au clic ******/
+
+.clickAnim {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to center, #aabeba, #ffffff);
+    position: absolute;
+    z-index: 9000;
+    transform: scale(0);
+    transform-origin: center;
+    animation: clickAnim 1s ease-in-out;
+}
+
+@keyframes clickAnim {
+    0% {
+        transform: scale(0);
+    }
+    0% {
+        transform: scale(2);
+        opacity: 1;
+    }
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+
 /************** HEADER *************/
 
 .logo {
@@ -224,11 +253,11 @@ a {
     width: 30%;
     background-size: cover;
     background-position: center;
-    border: 8px outset #bbc;
+    border: 6px outset #bbc;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, .8);
     &:hover {
-        border: 8px inset #bbc;
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, .8) inset;
+        border: 6px solid #bbc;
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, .8);
     }
 }
 
@@ -266,7 +295,7 @@ a {
 .depannage {
     margin: auto;
     text-align: center;
-    padding-top: 9%;
+    padding-top: 12%;
     font: 100 1em "AbrilFatface";
 }
 
